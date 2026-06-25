@@ -1,0 +1,14 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 80" width="100%" height="100%">
+  <!-- Stylized D/J Logo from uploaded image -->
+  <g fill="#1B365D">
+    <!-- Top Hook -->
+    <path d="M 14.2 67.8 L 14.2 19.2 L 38.5 19.2 A 8.4 8.4 0 0 1 47.0 27.6 L 23.7 27.6 L 23.7 58.4 Z" />
+    <!-- Bottom Hook -->
+    <path d="M 16.2 69.9 L 24.7 61.4 L 38.5 61.4 A 7.8 7.8 0 0 0 46.3 53.5 L 46.3 40.8 L 55.8 40.8 L 55.8 53.5 A 17.3 17.3 0 0 1 38.5 70.8 L 16.2 69.9 Z" />
+  </g>
+  <!-- Red/Orange Circle -->
+  <circle cx="51.0" cy="31.4" r="6.7" fill="#E13B30" />
+  
+  <!-- Text: Korean Only as requested -->
+  <text x="72" y="50" font-family="'Noto Sans KR', sans-serif" font-weight="700" font-size="22" fill="#0F2537">동주코퍼레이션</text>
+</svg>

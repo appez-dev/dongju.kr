@@ -1,0 +1,523 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>레퍼런스 | (주)동주코퍼레이션</title>
+  <meta name="description" content="대기업, 공공기관, 금융권 등 (주)동주코퍼레이션의 IT 인프라 및 백업 시스템 구축 실적을 소개합니다.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo-link">
+        <img src="images/logo.svg" alt="동주코퍼레이션 로고" class="logo-img">
+      </a>
+      <button class="menu-toggle" aria-label="메뉴 열기">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav-menu">
+        <div class="nav-item">
+          <a href="about.html" class="nav-link">회사소개</a>
+          <div class="nav-dropdown">
+            <a href="about.html#ceo" class="dropdown-link">CEO 인사말</a>
+            <a href="about.html#vision" class="dropdown-link">회사 개요 및 비전</a>
+            <a href="about.html#org" class="dropdown-link">조직도</a>
+            <a href="about.html#location" class="dropdown-link">오시는 길</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="solutions.html" class="nav-link">사업분야</a>
+          <div class="nav-dropdown">
+            <a href="solutions.html?tab=dell" class="dropdown-link">Dell Technologies</a>
+            <a href="solutions.html?tab=ablestack" class="dropdown-link">ABLESTACK</a>
+            <a href="solutions.html?tab=mdr" class="dropdown-link">MDR</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="references.html" class="nav-link">레퍼런스</a>
+        </div>
+        <div class="nav-item">
+          <a href="careers.html" class="nav-link">인재채용</a>
+        </div>
+        <div class="nav-item">
+          <a href="contact.html" class="btn btn-primary" style="padding: 8px 20px; font-size: 14px; color: #FFFFFF;">문의하기</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <h1 class="page-title">구축 레퍼런스</h1>
+      <p class="page-subtitle">수많은 대기업, 공공기관 및 금융사가 신뢰하는 동주코퍼레이션의 주요 실적</p>
+    </div>
+  </section>
+
+  <!-- References Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-tag">References</span>
+        <h2 class="section-title">주요 유지보수 및 구축 실적</h2>
+      </div>
+
+      <!-- Filter Controls -->
+      <div class="filter-controls">
+        <div class="search-input-wrapper">
+          <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" id="refSearch" class="search-input" placeholder="고객사명 또는 도입 제품 검색...">
+        </div>
+        <div class="filter-tags">
+          <button class="filter-tag-btn active" data-filter="all">전체보기</button>
+          <button class="filter-tag-btn" data-filter="backup">백업/복구</button>
+          <button class="filter-tag-btn" data-filter="storage">스토리지</button>
+          <button class="filter-tag-btn" data-filter="hci">HCI/서버</button>
+        </div>
+      </div>
+
+      <!-- Stats Summary -->
+      <div class="ref-stats-summary">
+        검색 결과: 총 <span id="resultCount">58</span>건의 실적이 조회되었습니다.
+      </div>
+
+      <!-- Interactive Table -->
+      <div class="ref-table-wrapper">
+        <table class="ref-table">
+          <thead>
+            <tr>
+              <th style="width: 40%;">고객사 (구분)</th>
+              <th style="width: 25%;">분야</th>
+              <th style="width: 35%;">주요 구축 품목 / 제품군</th>
+            </tr>
+          </thead>
+          <tbody id="refTableBody">
+            <!-- Row 1 -->
+            <tr class="ref-row" data-client="SK텔레콤" data-category="backup" data-products="DD6300, DD2500, Networker, San switch">
+              <td><strong>SK텔레콤</strong></td>
+              <td><span class="ref-badge backup">백업/복구</span></td>
+              <td class="ref-products">DD6300, DD2500, NetWorker, SAN Switch</td>
+            </tr>
+            <!-- Row 2 -->
+            <tr class="ref-row" data-client="미코" data-category="backup" data-products="Avamar, DataDomain">
+              <td><strong>미코</strong></td>
+              <td><span class="ref-badge backup">백업/복구</span></td>
+              <td class="ref-products">Avamar, DataDomain</td>
+            </tr>
+            <!-- Row 3 -->
+            <tr class="ref-row" data-client="JSR마이크로코리아" data-category="backup" data-products="DP4400">
+              <td><strong>JSR마이크로코리아</strong></td>
+              <td><span class="ref-badge backup">백업/복구</span></td>
+              <td class="ref-products">DP4400 (PowerProtect)</td>
+            </tr>
+            <!-- Row 4 -->
+            <tr class="ref-row" data-client="SK11번가" data-category="backup" data-products="DataDomain">
+              <td><strong>SK11번가 (11번가)</strong></td>
+              <td><span class="ref-badge backup">백업/복구</span></td>
+              <td class="ref-products">DataDomain</td>
+            </tr>
+            <!-- Row 5 -->
+            <tr class="ref-row" data-client="제주항공" data-category="backup" data-products="NetWorker, DataDomain">
+              <td><strong>제주항공</strong></td>
+              <td><span class="ref-badge backup">백업/복구</span></td>
+              <td class="ref-products">NetWorker, DataDomain</td>
+            </tr>
+            <!-- Row 6 -->
+            <tr class="ref-row" data-client="SMBC" data-category="storage" data-products="DP4400, UNITY, SAN Switch">
+              <td><strong>SMBC (삼정)</strong></td>
+              <td><span class="ref-badge storage">스토리지</span></td>
+              <td class="ref-products">DP4400, UNITY, SAN Switch</td>
+            </tr>
+            <!-- Row 7 -->
+            <tr class="ref-row" data-client="대한솔루션" data-category="storage" data-products="UNITY">
+              <td><strong>대한솔루션</strong></td>
+              <td><span class="ref-badge storage">스토리지</span></td>
+              <td class="ref-products">UNITY Storage</td>
+            </tr>
+            <!-- Row 8 -->
+            <tr class="ref-row" data-client="문화정보원" data-category="backup" data-products="Networker, DataDomain">
+              <td><strong>한국문화정보원</strong></td>
+              <td><span class="ref-badge backup">백업/복구</span></td>
+              <td class="ref-products">NetWorker, DataDomain</td>
+            </tr>
+            <!-- Row 9 -->
+            <tr class="ref-row" data-client="한국프리시전웍스" data-category="backup" data-products="NetWorker, DataDomain, UNITY">
+              <td><strong>한국프리시전웍스</strong></td>
+              <td><span class="ref-badge backup">백업/복구</span></td>
+              <td class="ref-products">NetWorker, DataDomain, UNITY</td>
+            </tr>
+            <!-- Row 10 -->
+            <tr class="ref-row" data-client="와이솔" data-category="storage" data-products="Avamar, UNITY">
+              <td><strong>와이솔</strong></td>
+              <td><span class="ref-badge storage">스토리지</span></td>
+              <td class="ref-products">Avamar, UNITY</td>
+            </tr>
+            <!-- Row 11 -->
+            <tr class="ref-row" data-client="KPF" data-category="backup" data-products="NetWorker, DataDomain">
+              <td><strong>KPF</strong></td>
+              <td><span class="ref-badge backup">백업/복구</span></td>
+              <td class="ref-products">NetWorker, DataDomain</td>
+            </tr>
+            <!-- Row 12 -->
+            <tr class="ref-row" data-client="사학연금" data-category="backup" data-products="NetWorker, DataDomain">
+              <td><strong>사립학교교직원연금공단 (사학연금)</strong></td>
+              <td><span class="ref-badge backup">백업/복구</span></td>
+              <td class="ref-products">NetWorker, DataDomain</td>
+            </tr>
+            <!-- Row 13 -->
+            <tr class="ref-row" data-client="한국선급" data-category="backup" data-products="Avamar, DataDomain">
+              <td><strong>한국선급 (KR)</strong></td>
+              <td><span class="ref-badge backup">백업/복구</span></td>
+              <td class="ref-products">Avamar, DataDomain</td>
+            </tr>
+            <!-- Row 14 -->
+            <tr class="ref-row" data-client="HD현대마린" data-category="hci" data-products="VXRAIL, Server, DataDomain, NetWorker">
+              <td><strong>HD현대마린솔루션</strong></td>
+              <td><span class="ref-badge hci">HCI/서버</span></td>
+              <td class="ref-products">VxRail, Server, DataDomain, NetWorker</td>
+            </tr>
+            <!-- Row 15 -->
+            <tr class="ref-row" data-client="부산진해경제자유구역청" data-category="backup" data-products="Avamar, DataDomain">
+              <td><strong>부산진해경제자유구역청</strong></td>
+              <td><span class="ref-badge backup">백업/복구</span></td>
+              <td class="ref-products">Avamar, DataDomain</td>
+            </tr>
+            <!-- Row 16 -->
+            <tr class="ref-row" data-client="부산여자대학교" data-category="backup" data-products="Avamar, DataDomain">
+              <td><strong>부산여자대학교</strong></td>
+              <td><span class="ref-badge backup">백업/복구</span></td>
+              <td class="ref-products">Avamar, DataDomain</td>
+            </tr>
+            <!-- Row 17 -->
+            <tr class="ref-row" data-client="BNK시스템" data-category="backup" data-products="DP4400">
+              <td><strong>BNK시스템</strong></td>
+              <td><span class="ref-badge backup">백업/복구</span></td>
+              <td class="ref-products">DP4400</td>
+            </tr>
+            <!-- Row 18 -->
+            <tr class="ref-row" data-client="넥센" data-category="backup" data-products="DP4400">
+              <td><strong>넥센</strong></td>
+              <td><span class="ref-badge backup">백업/복구</span></td>
+              <td class="ref-products">DP4400</td>
+            </tr>
+            <!-- Row 19 -->
+            <tr class="ref-row" data-client="삼성중공업" data-category="backup" data-products="DP4400, DP5800">
+              <td><strong>삼성중공업</strong></td>
+              <td><span class="ref-badge backup">백업/복구</span></td>
+              <td class="ref-products">DP4400, DP5800</td>
+            </tr>
+            <!-- Row 20 -->
+            <tr class="ref-row" data-client="현대위아" data-category="backup" data-products="Avamar, DataDomain">
+              <td><strong>현대위아</strong></td>
+              <td><span class="ref-badge backup">백업/복구</span></td>
+              <td class="ref-products">Avamar, DataDomain</td>
+            </tr>
+            <!-- Row 21 -->
+            <tr class="ref-row" data-client="KT Alpha" data-category="backup" data-products="NetWorker, DataDomain, Avamar">
+              <td><strong>KT Alpha</strong></td>
+              <td><span class="ref-badge backup">백업/복구</span></td>
+              <td class="ref-products">NetWorker, DataDomain, Avamar</td>
+            </tr>
+            <!-- Row 22 -->
+            <tr class="ref-row" data-client="한국발전기술" data-category="backup" data-products="Avamar">
+              <td><strong>한국발전기술</strong></td>
+              <td><span class="ref-badge backup">백업/복구</span></td>
+              <td class="ref-products">Avamar</td>
+            </tr>
+            <!-- Row 23 -->
+            <tr class="ref-row" data-client="한국지역난방공사" data-category="backup" data-products="NetWorker, DataDomain, UNITY">
+              <td><strong>한국지역난방공사</strong></td>
+              <td><span class="ref-badge backup">백업/복구</span></td>
+              <td class="ref-products">NetWorker, DataDomain, UNITY</td>
+            </tr>
+            <!-- Row 24 -->
+            <tr class="ref-row" data-client="서울외국환중개" data-category="backup" data-products="NetWorker, DataDomain">
+              <td><strong>서울외국환중개</strong></td>
+              <td><span class="ref-badge backup">백업/복구</span></td>
+              <td class="ref-products">NetWorker, DataDomain</td>
+            </tr>
+            <!-- Row 25 -->
+            <tr class="ref-row" data-client="한국토지주택공사" data-category="hci" data-products="VXRAIL, Server, DataDomain, NetWorker">
+              <td><strong>한국토지주택공사 (LH)</strong></td>
+              <td><span class="ref-badge hci">HCI/서버</span></td>
+              <td class="ref-products">VxRail, Server, DataDomain, NetWorker</td>
+            </tr>
+            <!-- Row 26 -->
+            <tr class="ref-row" data-client="보건복지부 사회보장정보원" data-category="backup" data-products="NetWorker, DataDomain, UNITY">
+              <td><strong>보건복지부 사회보장정보원</strong></td>
+              <td><span class="ref-badge backup">백업/복구</span></td>
+              <td class="ref-products">NetWorker, DataDomain, UNITY</td>
+            </tr>
+            <!-- Row 27 -->
+            <tr class="ref-row" data-client="한국폴리텍" data-category="backup" data-products="NetWorker, DataDomain, Avamar">
+              <td><strong>한국폴리텍대학</strong></td>
+              <td><span class="ref-badge backup">백업/복구</span></td>
+              <td class="ref-products">NetWorker, DataDomain, Avamar</td>
+            </tr>
+            <!-- Row 28 -->
+            <tr class="ref-row" data-client="한국평가데이터" data-category="backup" data-products="NetWorker, DataDomain, UNITY">
+              <td><strong>한국평가데이터 (KoDATA)</strong></td>
+              <td><span class="ref-badge backup">백업/복구</span></td>
+              <td class="ref-products">NetWorker, DataDomain, UNITY</td>
+            </tr>
+            <!-- Row 29 -->
+            <tr class="ref-row" data-client="광명산업" data-category="backup" data-products="Avamar, DataDomain">
+              <td><strong>광명산업</strong></td>
+              <td><span class="ref-badge backup">백업/복구</span></td>
+              <td class="ref-products">Avamar, DataDomain</td>
+            </tr>
+            <!-- Row 30 -->
+            <tr class="ref-row" data-client="타타대우 상용차" data-category="backup" data-products="DP4400">
+              <td><strong>타타대우상용차</strong></td>
+              <td><span class="ref-badge backup">백업/복구</span></td>
+              <td class="ref-products">DP4400</td>
+            </tr>
+            <!-- Row 31 -->
+            <tr class="ref-row" data-client="RIST" data-category="backup" data-products="Networker, DataDomain">
+              <td><strong>포항산업과학연구원 (RIST)</strong></td>
+              <td><span class="ref-badge backup">백업/복구</span></td>
+              <td class="ref-products">NetWorker, DataDomain</td>
+            </tr>
+            <!-- Row 32 -->
+            <tr class="ref-row" data-client="신용보증기금" data-category="backup" data-products="Networker, DataDomain, Server">
+              <td><strong>신용보증기금</strong></td>
+              <td><span class="ref-badge backup">백업/복구</span></td>
+              <td class="ref-products">NetWorker, DataDomain, Server</td>
+            </tr>
+            <!-- Row 33 -->
+            <tr class="ref-row" data-client="한국신용정보원" data-category="backup" data-products="Networker, DataDomain, PowerStore">
+              <td><strong>한국신용정보원</strong></td>
+              <td><span class="ref-badge backup">백업/복구</span></td>
+              <td class="ref-products">NetWorker, DataDomain, PowerStore</td>
+            </tr>
+            <!-- Row 34 -->
+            <tr class="ref-row" data-client="과학기술인공제회" data-category="backup" data-products="Networker, DataDomain">
+              <td><strong>과학기술인공제회</strong></td>
+              <td><span class="ref-badge backup">백업/복구</span></td>
+              <td class="ref-products">NetWorker, DataDomain</td>
+            </tr>
+            <!-- Row 35 -->
+            <tr class="ref-row" data-client="농심" data-category="backup" data-products="NetWorker, Avamar, DataDomain, UNITY">
+              <td><strong>농심</strong></td>
+              <td><span class="ref-badge backup">백업/복구</span></td>
+              <td class="ref-products">NetWorker, Avamar, DataDomain, UNITY</td>
+            </tr>
+            <!-- Row 36 -->
+            <tr class="ref-row" data-client="전국은행연합회" data-category="backup" data-products="Networker, DataDomain">
+              <td><strong>전국은행연합회</strong></td>
+              <td><span class="ref-badge backup">백업/복구</span></td>
+              <td class="ref-products">NetWorker, DataDomain</td>
+            </tr>
+            <!-- Row 37 -->
+            <tr class="ref-row" data-client="KT" data-category="backup" data-products="Networker, DataDomain">
+              <td><strong>KT (케이티)</strong></td>
+              <td><span class="ref-badge backup">백업/복구</span></td>
+              <td class="ref-products">NetWorker, DataDomain</td>
+            </tr>
+            <!-- Row 38 -->
+            <tr class="ref-row" data-client="KT M&S" data-category="backup" data-products="Networker, DataDomain">
+              <td><strong>KT M&S</strong></td>
+              <td><span class="ref-badge backup">백업/복구</span></td>
+              <td class="ref-products">NetWorker, DataDomain</td>
+            </tr>
+            <!-- Row 39 -->
+            <tr class="ref-row" data-client="넥센타이어" data-category="backup" data-products="Networker, DataDomain">
+              <td><strong>넥센타이어</strong></td>
+              <td><span class="ref-badge backup">백업/복구</span></td>
+              <td class="ref-products">NetWorker, DataDomain</td>
+            </tr>
+            <!-- Row 40 -->
+            <tr class="ref-row" data-client="바이오톡스텍" data-category="backup" data-products="Networker, DataDomain">
+              <td><strong>바이오톡스텍</strong></td>
+              <td><span class="ref-badge backup">백업/복구</span></td>
+              <td class="ref-products">NetWorker, DataDomain</td>
+            </tr>
+            <!-- Row 41 -->
+            <tr class="ref-row" data-client="셀트리온제약" data-category="backup" data-products="Avamar">
+              <td><strong>셀트리온제약</strong></td>
+              <td><span class="ref-badge backup">백업/복구</span></td>
+              <td class="ref-products">Avamar</td>
+            </tr>
+            <!-- Row 42 -->
+            <tr class="ref-row" data-client="한국항공우주산업" data-category="backup" data-products="Networker, DataDomain">
+              <td><strong>한국항공우주산업 (KAI)</strong></td>
+              <td><span class="ref-badge backup">백업/복구</span></td>
+              <td class="ref-products">NetWorker, DataDomain</td>
+            </tr>
+            <!-- Row 43 -->
+            <tr class="ref-row" data-client="국토교통부 사이버안전센터" data-category="backup" data-products="Networker, DataDomain">
+              <td><strong>국토교통부 사이버안전센터</strong></td>
+              <td><span class="ref-badge backup">백업/복구</span></td>
+              <td class="ref-products">NetWorker, DataDomain</td>
+            </tr>
+            <!-- Row 44 -->
+            <tr class="ref-row" data-client="메디톡스" data-category="backup" data-products="Networker, DataDomain, UNITY, DM5500">
+              <td><strong>메디톡스</strong></td>
+              <td><span class="ref-badge backup">백업/복구</span></td>
+              <td class="ref-products">NetWorker, DataDomain, UNITY, DM5500</td>
+            </tr>
+            <!-- Row 45 -->
+            <tr class="ref-row" data-client="파워로직스" data-category="backup" data-products="Avamar, DataDomain">
+              <td><strong>파워로직스</strong></td>
+              <td><span class="ref-badge backup">백업/복구</span></td>
+              <td class="ref-products">Avamar, DataDomain</td>
+            </tr>
+            <!-- Row 46 -->
+            <tr class="ref-row" data-client="한국교육학술정보원" data-category="hci" data-products="PowerFlex, UNITY">
+              <td><strong>한국교육학술정보원 (KERIS)</strong></td>
+              <td><span class="ref-badge hci">HCI/서버</span></td>
+              <td class="ref-products">PowerFlex, UNITY</td>
+            </tr>
+            <!-- Row 47 -->
+            <tr class="ref-row" data-client="유니드" data-category="storage" data-products="UNITY">
+              <td><strong>유니드</strong></td>
+              <td><span class="ref-badge storage">스토리지</span></td>
+              <td class="ref-products">UNITY Storage</td>
+            </tr>
+            <!-- Row 48 -->
+            <tr class="ref-row" data-client="중랑구청" data-category="backup" data-products="Avamar, DataDomain">
+              <td><strong>중랑구청</strong></td>
+              <td><span class="ref-badge backup">백업/복구</span></td>
+              <td class="ref-products">Avamar, DataDomain</td>
+            </tr>
+            <!-- Row 49 -->
+            <tr class="ref-row" data-client="국토안전관리원" data-category="hci" data-products="PowerFlex, ECS">
+              <td><strong>국토안전관리원</strong></td>
+              <td><span class="ref-badge hci">HCI/서버</span></td>
+              <td class="ref-products">PowerFlex, ECS</td>
+            </tr>
+            <!-- Row 50 -->
+            <tr class="ref-row" data-client="저축은행중앙회" data-category="backup" data-products="NetWorker, DataDomain, UNITY, PowerStore">
+              <td><strong>저축은행중앙회 (상호저축은행)</strong></td>
+              <td><span class="ref-badge backup">백업/복구</span></td>
+              <td class="ref-products">NetWorker, DataDomain, UNITY, PowerStore</td>
+            </tr>
+            <!-- Row 51 -->
+            <tr class="ref-row" data-client="SIFLEX" data-category="backup" data-products="Avamar, DataDomain">
+              <td><strong>SIFLEX (시플렉스)</strong></td>
+              <td><span class="ref-badge backup">백업/복구</span></td>
+              <td class="ref-products">Avamar, DataDomain</td>
+            </tr>
+            <!-- Row 52 -->
+            <tr class="ref-row" data-client="앰코코리아" data-category="backup" data-products="NetWorker, DataDomain">
+              <td><strong>앰코테크놀로지코리아 (앰코코리아)</strong></td>
+              <td><span class="ref-badge backup">백업/복구</span></td>
+              <td class="ref-products">NetWorker, DataDomain</td>
+            </tr>
+            <!-- Row 53 -->
+            <tr class="ref-row" data-client="경동원" data-category="backup" data-products="Avamar, DataDomain">
+              <td><strong>경동원</strong></td>
+              <td><span class="ref-badge backup">백업/복구</span></td>
+              <td class="ref-products">Avamar, DataDomain</td>
+            </tr>
+            <!-- Row 54 -->
+            <tr class="ref-row" data-client="현대모비스" data-category="backup" data-products="NetWorker, DataDomain">
+              <td><strong>현대모비스</strong></td>
+              <td><span class="ref-badge backup">백업/복구</span></td>
+              <td class="ref-products">NetWorker, DataDomain</td>
+            </tr>
+            <!-- Row 55 -->
+            <tr class="ref-row" data-client="동아제약" data-category="backup" data-products="NetWorker, DataDomain">
+              <td><strong>동아제약</strong></td>
+              <td><span class="ref-badge backup">백업/복구</span></td>
+              <td class="ref-products">NetWorker, DataDomain</td>
+            </tr>
+            <!-- Row 56 -->
+            <tr class="ref-row" data-client="삼성" data-category="backup" data-products="NetWorker, DataDomain">
+              <td><strong>삼성 (그룹)</strong></td>
+              <td><span class="ref-badge backup">백업/복구</span></td>
+              <td class="ref-products">NetWorker, DataDomain</td>
+            </tr>
+            <!-- Row 57 -->
+            <tr class="ref-row" data-client="문화체육관광부" data-category="backup" data-products="UNITY, Avamar, DataDomain, NetWorker">
+              <td><strong>문화체육관광부 (문체부)</strong></td>
+              <td><span class="ref-badge backup">백업/복구</span></td>
+              <td class="ref-products">UNITY, Avamar, DataDomain, NetWorker</td>
+            </tr>
+            <!-- Row 58 -->
+            <tr class="ref-row" data-client="콜마비앤에이치" data-category="backup" data-products="Networker, DataDomain">
+              <td><strong>콜마비앤에이치</strong></td>
+              <td><span class="ref-badge backup">백업/복구</span></td>
+              <td class="ref-products">NetWorker, DataDomain</td>
+            </tr>
+            <!-- Row 59 -->
+            <tr class="ref-row" data-client="서울시데이터센터" data-category="backup" data-products="Networker, DataDomain, UNITY">
+              <td><strong>서울시데이터센터</strong></td>
+              <td><span class="ref-badge backup">백업/복구</span></td>
+              <td class="ref-products">NetWorker, DataDomain, UNITY</td>
+            </tr>
+            <!-- Row 60 -->
+            <tr class="ref-row" data-client="한림대학교" data-category="backup" data-products="NetWorker, DataDomain, VNX">
+              <td><strong>한림대학교</strong></td>
+              <td><span class="ref-badge backup">백업/복구</span></td>
+              <td class="ref-products">NetWorker, DataDomain, VNX Storage</td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <!-- No Results Banner -->
+        <div id="noResults" class="no-results">
+          검색 조건과 일치하는 구축 실적이 존재하지 않습니다.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-info">
+        <a href="index.html" class="logo-link">
+          <img src="images/logo.svg" alt="동주코퍼레이션 로고" class="logo-img">
+        </a>
+        <p class="footer-text" style="margin-top: 15px;">
+          (주)동주코퍼레이션은 IT 인프라 설계, 백업 및 스토리지 시스템 구축, 그리고 지능형 엔드포인트 보안 관제 서비스를 포괄하는 종합 B2B IT 인프라 파트너입니다.
+        </p>
+      </div>
+      <div class="footer-links">
+        <h4 class="footer-title">바로가기</h4>
+        <ul>
+          <li><a href="about.html">회사소개</a></li>
+          <li><a href="solutions.html">사업분야</a></li>
+          <li><a href="references.html">레퍼런스</a></li>
+          <li><a href="careers.html">인재채용</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4 class="footer-title">주요 솔루션</h4>
+        <ul>
+          <li><a href="solutions.html?tab=dell">Dell Backup/Storage</a></li>
+          <li><a href="solutions.html?tab=ablestack">ABLESTACK HCI</a></li>
+          <li><a href="solutions.html?tab=mdr">MDR 보안관제</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4 class="footer-title">연락처</h4>
+        <p><strong>서울본사:</strong> 서울특별시 영등포구 선유로49길 23, 4층 415호 (선유도역2차 아이에스비즈타워)</p>
+        <p><strong>부산지사:</strong> 부산광역시 해운대구 센텀중앙로 90, 6층 610호 (큐비E센텀)</p>
+        <p><strong>대표전화:</strong> 02-2632-4008 | <strong>팩스:</strong> 02-2632-4009</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 by (주)동주코퍼레이션. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Set initial count on load
+    document.addEventListener('DOMContentLoaded', () => {
+      const rows = document.querySelectorAll('.ref-row');
+      const countSpan = document.getElementById('resultCount');
+      if (countSpan && rows) {
+        countSpan.textContent = rows.length;
+      }
+    });
+  </script>
+</body>
+</html>
