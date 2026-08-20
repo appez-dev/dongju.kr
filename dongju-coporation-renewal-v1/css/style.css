@@ -2577,3 +2577,53 @@ section {
   padding: 12px 14px;
   height: 72px;
 }
+
+/* Location Tabs and Switching Styling */
+.location-tabs-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.location-tabs {
+  display: inline-flex;
+  background-color: var(--bg-light);
+  padding: 6px;
+  border-radius: 30px;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+}
+
+.location-tab {
+  padding: 10px 32px;
+  border-radius: 24px;
+  border: none;
+  background: none;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.location-tab:hover {
+  color: var(--primary-color);
+}
+
+.location-tab.active {
+  background-color: var(--primary-color);
+  color: var(--bg-white);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Transitions for map and info content */
+.office-map, .office-info {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.office-map.active, .office-info.active {
+  opacity: 1;
+  transform: translateY(0);
+}

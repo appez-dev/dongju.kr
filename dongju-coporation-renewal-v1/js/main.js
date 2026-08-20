@@ -105,14 +105,14 @@
 
     // Deep Linking: Check URL hash on page load
     const initialHash = window.location.hash.substring(1);
-    if (initialHash && ['dell', 'ablestack', 'mdr'].includes(initialHash)) {
+    if (initialHash && ['dell', 'ablestack', 'mdr', 'everpure', 'veeam'].includes(initialHash)) {
       activateSolTab(initialHash);
     }
-
+ 
     // Handle hashchange event (back button or external click)
     window.addEventListener('hashchange', () => {
       const newHash = window.location.hash.substring(1);
-      if (newHash && ['dell', 'ablestack', 'mdr'].includes(newHash)) {
+      if (newHash && ['dell', 'ablestack', 'mdr', 'everpure', 'veeam'].includes(newHash)) {
         activateSolTab(newHash);
       }
     });
@@ -162,6 +162,45 @@
           formSuccess.classList.remove('active');
         }, 6000);
       }
+    });
+  }
+
+  // Location Office Tab Switching (Seoul / Busan)
+  const locTabButtons = document.querySelectorAll('.location-tab');
+  const officeMaps = document.querySelectorAll('.office-map');
+  const officeInfos = document.querySelectorAll('.office-info');
+
+  if (locTabButtons.length > 0) {
+    locTabButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const targetOffice = button.getAttribute('data-office');
+
+        // Set active class on buttons
+        locTabButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+
+        // Toggle map visibility
+        officeMaps.forEach(map => {
+          if (map.classList.contains(targetOffice)) {
+            map.style.display = 'block';
+            setTimeout(() => map.classList.add('active'), 10);
+          } else {
+            map.style.display = 'none';
+            map.classList.remove('active');
+          }
+        });
+
+        // Toggle info panel visibility
+        officeInfos.forEach(info => {
+          if (info.classList.contains(targetOffice)) {
+            info.style.display = 'flex';
+            setTimeout(() => info.classList.add('active'), 10);
+          } else {
+            info.style.display = 'none';
+            info.classList.remove('active');
+          }
+        });
+      });
     });
   }
 });
