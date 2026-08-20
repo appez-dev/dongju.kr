@@ -2020,7 +2020,7 @@ section {
 .solutions-top-tab-btn {
   background: none;
   border: none;
-  padding: 16px 32px;
+  padding: 12px 48px;
   font-family: var(--font-family);
   font-size: 1.25rem;
   font-weight: 700;
@@ -2028,6 +2028,20 @@ section {
   cursor: pointer;
   position: relative;
   transition: var(--transition);
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 76px;
+  box-sizing: border-box;
+}
+
+.solutions-top-tab-btn .tab-subtext {
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-top: 4px;
+  color: inherit;
 }
 
 .solutions-top-tab-btn::after {
@@ -2051,6 +2065,25 @@ section {
 
 .solutions-top-tab-btn.active::after {
   width: 100%;
+}
+
+@media (max-width: 768px) {
+  .solutions-top-tabs {
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .solutions-top-tab-btn {
+    padding: 8px 16px;
+    font-size: 1.05rem;
+    min-height: 64px;
+  }
+  
+  .solutions-top-tab-btn .tab-subtext {
+    font-size: 0.85rem;
+    margin-top: 2px;
+  }
 }
 
 /* Solutions Top-Level Sections Display */
